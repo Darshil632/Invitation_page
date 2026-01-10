@@ -298,10 +298,6 @@ export default function App() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
             >
-              "Where there is love, there is life." <br />
-              <span className="not-italic font-medium mt-2 block text-pink-100">
-                — Best Compliments from Darshil
-              </span>
             </motion.div>
           </motion.div>
         </div>
