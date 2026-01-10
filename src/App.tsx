@@ -236,7 +236,7 @@ export default function App() {
           date="Saturday, February 14, 2026"
           time="11:00 AM onwards"
           venue="Khalihan A Luxury Stay"
-          address="22, New Ganesh Nagar Ahead of Shubh Labh Apartment, Roop Sagar Rd, Pahada, Udaipur, Rajasthan 313001"
+          address="Khalihan Luxury Farm Stay cafe & Restaurant"
           color="yellow"
           icon="sun"
           onRSVP={(response) => handleRSVP('haldi', response)}
@@ -252,7 +252,7 @@ export default function App() {
           date="Saturday, February 14, 2026"
           time="7:00 PM onwards"
           venue="Khalihan A Luxury Stay"
-          address="22, New Ganesh Nagar Ahead of Shubh Labh Apartment, Roop Sagar Rd, Pahada, Udaipur, Rajasthan 313001"
+          address="Khalihan Luxury Farm Stay cafe & Restaurant"
           color="purple"
           icon="moon"
           onRSVP={(response) => handleRSVP('main', response)}
