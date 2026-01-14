@@ -1,9 +1,10 @@
 import { motion, useScroll, useTransform } from 'motion/react';
-import { Calendar, MapPin, Clock, Download, Heart, Sparkles } from 'lucide-react';
+import { Calendar, MapPin, Clock, ChevronDown, Heart, Sparkles } from 'lucide-react';
 import { EventSection } from './components/EventSection';
 import { useState } from 'react';
 import haldiImage from 'figma:asset/e369cb31fd628701d648d55e6462221174e81d72.png';
 import mainFunctionImage from 'figma:asset/110d29ec01e3380e345330b4d2d476ad67e9b804.png';
+import ganeshIcon from './assets/ganesh_ji_icon.png';
 
 export default function App() {
   const [rsvpHaldi, setRsvpHaldi] = useState<string | null>(null);
@@ -114,6 +115,14 @@ export default function App() {
             transition={{ duration: 1 }}
           >
             <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1.2 }}
+              className="mb-8 flex justify-center"
+            >
+              <img src={ganeshIcon} alt="Lord Ganesha" className="h-24 w-auto object-contain opacity-90 drop-shadow-sm" />
+            </motion.div>
+            <motion.div
               className="text-amber-600 mb-4"
               animate={{ scale: [1, 1.1, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
@@ -126,7 +135,7 @@ export default function App() {
             </h1>
 
             <motion.div
-              className="text-2xl md:text-3xl mb-4 text-amber-800"
+              className="text-2xl md:text-3xl mb-4 text-amber-800 font-serif"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
@@ -142,28 +151,24 @@ export default function App() {
             />
 
             <motion.p
-              className="text-xl md:text-2xl text-gray-700 mb-12"
+              className="text-xl md:text-2xl text-gray-700 mb-12 font-serif"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.2 }}
             >
               You are cordially invited to celebrate
               <br />
-              <span className="text-amber-700">our Silver Jubilee</span>
+              <span className="text-amber-700 font-cursive text-4xl md:text-5xl mt-2 block">our Silver Jubilee</span>
             </motion.p>
 
-            <motion.button
-              onClick={handleDownload}
-              className="bg-amber-600 text-white px-8 py-4 rounded-full flex items-center gap-2 mx-auto hover:bg-amber-700 transition-colors"
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 1.5 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <motion.div
+              className="flex justify-center mt-12 text-amber-800/60"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, y: [0, 10, 0] }}
+              transition={{ delay: 2, duration: 2, repeat: Infinity }}
             >
-              <Download size={20} />
-              Download Invitation
-            </motion.button>
+              <ChevronDown size={40} />
+            </motion.div>
           </motion.div>
 
           {/* Scroll Indicator */}
@@ -286,10 +291,10 @@ export default function App() {
             viewport={{ once: true }}
           >
             <Heart size={40} fill="currentColor" className="mx-auto mb-4" />
-            <p className="text-lg md:text-xl mb-2 text-pink-50 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl mb-2 text-pink-50 max-w-2xl mx-auto font-serif italic">
               "With the blessings of elders and love of family, we invite you to celebrate 25 years of togetherness."
             </p>
-            <p className="text-lg md:text-xl text-pink-100 mb-6 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-pink-100 mb-6 max-w-2xl mx-auto font-serif">
               Your presence will make this celebration of love and memories truly complete.
             </p>
 
@@ -299,7 +304,7 @@ export default function App() {
               whileInView={{ opacity: 1 }}
             >
               "Where there is love, there is life." <br />
-              <span className="not-italic font-medium mt-2 block text-pink-100">
+              <span className="not-italic font-medium mt-2 block text-pink-100 font-serif">
                 — Best Compliments from Darshil
               </span>
             </motion.div>

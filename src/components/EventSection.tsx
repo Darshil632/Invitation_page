@@ -95,11 +95,11 @@ export function EventSection({
           >
             <Icon size={60} />
           </motion.div>
-          
-          <h2 className={`text-4xl md:text-5xl mb-3 ${scheme.text}`}>
+
+          <h2 className={`text-4xl md:text-5xl mb-3 ${scheme.text} font-serif`}>
             {title}
           </h2>
-          
+
           <p className="text-gray-600 text-lg md:text-xl">
             {subtitle}
           </p>
@@ -117,19 +117,19 @@ export function EventSection({
             >
               {/* Subtle glow effect */}
               <div className={`absolute inset-0 rounded-3xl bg-gradient-to-br ${scheme.gradient} opacity-10 blur-2xl`} />
-              
+
               <motion.img
                 src={imageUrl}
                 alt={title}
                 className={`relative z-10 w-full h-full object-cover ${color === 'yellow' ? 'rounded-3xl' : 'rounded-full'} border-4 border-white shadow-2xl`}
                 className="relative z-10 w-full h-full object-cover rounded-3xl border-4 border-white shadow-2xl"
-                whileHover={{ 
+                whileHover={{
                   scale: 1.05,
                   boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
                 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               />
-              
+
               {/* Subtle sparkles - only for purple/night event */}
               {color === 'purple' && (
                 <>
@@ -224,7 +224,7 @@ export function EventSection({
           <h3 className={`text-2xl mb-4 text-center ${scheme.text}`}>
             RSVP
           </h3>
-          
+
           {rsvpStatus ? (
             <motion.div
               initial={{ scale: 0 }}
@@ -248,7 +248,7 @@ export function EventSection({
                 <Check size={20} />
                 I'll be there
               </motion.button>
-              
+
               <motion.button
                 onClick={() => onRSVP('Unable to Attend')}
                 className={`border-2 ${scheme.buttonOutline} px-8 py-3 rounded-full flex items-center justify-center gap-2 transition-colors`}
