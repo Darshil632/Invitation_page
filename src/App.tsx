@@ -4,7 +4,7 @@ import { EventSection } from './components/EventSection';
 import { useState } from 'react';
 import haldiImage from 'figma:asset/e369cb31fd628701d648d55e6462221174e81d72.png';
 import mainFunctionImage from 'figma:asset/110d29ec01e3380e345330b4d2d476ad67e9b804.png';
-import ganeshIcon from './assets/ganesh_ji_icon.png';
+import ganeshIcon from './assets/pngtree-elegant-hindu-wedding-card-design-with-ganesha-aum-symbol-diwali-theme-png-image_21107600.png';
 
 export default function App() {
   const [rsvpHaldi, setRsvpHaldi] = useState<string | null>(null);
@@ -120,7 +120,7 @@ export default function App() {
               transition={{ duration: 1.2 }}
               className="mb-8 flex justify-center"
             >
-              <img src={ganeshIcon} alt="Lord Ganesha" className="h-24 w-auto object-contain opacity-90 drop-shadow-sm" />
+              <img src={ganeshIcon} alt="Lord Ganesha" className="h-14 w-auto object-contain opacity-90 drop-shadow-sm" />
             </motion.div>
             <motion.div
               className="text-amber-600 mb-4"
