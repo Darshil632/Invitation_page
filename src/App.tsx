@@ -120,7 +120,7 @@ export default function App() {
               transition={{ duration: 1.2 }}
               className="mb-8 flex justify-center"
             >
-              <img src={ganeshIcon} alt="Lord Ganesha" className="h-14 w-auto object-contain opacity-90 drop-shadow-sm" />
+              <img src={ganeshIcon} alt="Lord Ganesha" className="h-10 w-auto object-contain opacity-90 drop-shadow-sm" />
             </motion.div>
             <motion.div
               className="text-amber-600 mb-4"
