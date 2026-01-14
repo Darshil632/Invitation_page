@@ -239,9 +239,9 @@ export default function App() {
           title="Haldi Ceremony"
           subtitle="An afternoon of yellow hues and joyous traditions"
           date="Saturday, February 14, 2026"
-          time="11:00 AM onwards"
+          time="15:00 PM onwards"
           venue="Khalihan A Luxury Stay"
-          address="22, New Ganesh Nagar Ahead of Shubh Labh Apartment, Roop Sagar Rd, Pahada, Udaipur, Rajasthan 313001"
+          address="Khalihan Luxury Farm Stay cafe & Restaurant"
           color="yellow"
           icon="sun"
           onRSVP={(response) => handleRSVP('haldi', response)}
@@ -257,7 +257,7 @@ export default function App() {
           date="Saturday, February 14, 2026"
           time="7:00 PM onwards"
           venue="Khalihan A Luxury Stay"
-          address="22, New Ganesh Nagar Ahead of Shubh Labh Apartment, Roop Sagar Rd, Pahada, Udaipur, Rajasthan 313001"
+          address="Khalihan Luxury Farm Stay cafe & Restaurant"
           color="purple"
           icon="moon"
           onRSVP={(response) => handleRSVP('main', response)}
@@ -304,7 +304,7 @@ export default function App() {
               whileInView={{ opacity: 1 }}
             >
               "Where there is love, there is life." <br />
-              <span className="not-italic font-medium mt-2 block text-pink-100 font-serif">
+              <span className="not-italic font-medium mt-2 block text-pink-100">
                 — Best Compliments from Darshil
               </span>
             </motion.div>
