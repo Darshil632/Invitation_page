@@ -1631,7 +1631,3 @@ html {
     opacity: .5;
   }
 }
-
-.font-satisfy {
-  font-family: var(--font-satisfy);
-}

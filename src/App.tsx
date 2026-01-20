@@ -130,7 +130,7 @@ export default function App() {
               <Heart size={60} fill="currentColor" className="mx-auto" />
             </motion.div>
 
-            <h1 className="text-6xl md:text-8xl mb-6 text-amber-900 font-satisfy">
+            <h1 className="text-6xl md:text-8xl mb-6 text-amber-900 font-cursive">
               Yogesh & Veera
             </h1>
 
