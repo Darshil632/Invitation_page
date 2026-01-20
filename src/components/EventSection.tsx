@@ -96,7 +96,7 @@ export function EventSection({
             <Icon size={60} />
           </motion.div>
 
-          <h2 className={`text-4xl md:text-5xl mb-3 ${scheme.text} font-cursive`}>
+          <h2 className={`text-4xl md:text-5xl mb-3 ${scheme.text} font-cursive font-normal`}>
             {title}
           </h2>
 

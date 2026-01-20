@@ -1631,6 +1631,7 @@ html {
   }
 }
 
-.font-satisfy {
-  font-family: var(--font-satisfy);
+.font-cursive {
+  font-family: var(--font-cursive);
+  font-weight: 400;
 }
