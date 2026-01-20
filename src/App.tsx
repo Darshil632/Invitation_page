@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from 'motion/react';
 import { Calendar, MapPin, Clock, ChevronDown, Heart, Sparkles } from 'lucide-react';
 import { EventSection } from './components/EventSection';
 import { useState } from 'react';
-import haldiImage from 'figma:asset/e369cb31fd628701d648d55e6462221174e81d72.png';
+import haldiImage from './assets/haldi_hot_pink_outfits.png';
 import mainFunctionImage from 'figma:asset/110d29ec01e3380e345330b4d2d476ad67e9b804.png';
 import ganeshIcon from './assets/pngtree-elegant-hindu-wedding-card-design-with-ganesha-aum-symbol-diwali-theme-png-image_21107600.png';
 
@@ -249,6 +249,16 @@ export default function App() {
           rsvpStatus={rsvpHaldi}
           delay={0}
           imageUrl={haldiImage}
+          wardrobe={{
+            woman: {
+              text: "Hot pink",
+              colorClass: "bg-pink-500"
+            },
+            man: {
+              text: "Multicolor (relevant to hot pink)",
+              colorClass: "bg-gradient-to-r from-pink-500 via-amber-400 to-rose-400"
+            }
+          }}
         />
 
         <EventSection

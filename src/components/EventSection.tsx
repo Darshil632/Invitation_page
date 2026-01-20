@@ -15,6 +15,10 @@ interface EventSectionProps {
   rsvpStatus: string | null;
   delay?: number;
   imageUrl?: string;
+  wardrobe?: {
+    woman: { text: string; colorClass: string };
+    man: { text: string; colorClass: string };
+  };
 }
 
 export function EventSection({
@@ -31,6 +35,7 @@ export function EventSection({
   rsvpStatus,
   delay = 0,
   imageUrl,
+  wardrobe,
 }: EventSectionProps) {
   const colorScheme = {
     yellow: {
@@ -204,6 +209,25 @@ export function EventSection({
             <div className="text-gray-800">{venue}</div>
           </motion.div>
         </div>
+
+        {/* Wardrobe Section */}
+        {wardrobe && (
+          <div className="bg-white rounded-2xl p-6 shadow-md mb-8 text-center">
+            <h4 className={`text-4xl mb-8 ${scheme.text} font-cursive`}>Dress Code</h4>
+            <div className="grid md:grid-cols-2 gap-8 relative">
+              <div className="flex flex-col items-center md:border-r md:border-gray-200">
+                <div className="text-xl font-medium text-gray-700 mb-2">Women</div>
+                <div className={`text-base ${scheme.text} mb-3 font-medium`}>{wardrobe.woman.text}</div>
+                <div className={`h-8 w-32 rounded-lg ${wardrobe.woman.colorClass} shadow-sm border border-gray-100`}></div>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="text-xl font-medium text-gray-700 mb-2">Men</div>
+                <div className={`text-base ${scheme.text} mb-3 font-medium`}>{wardrobe.man.text}</div>
+                <div className={`h-8 w-32 rounded-lg ${wardrobe.man.colorClass} shadow-sm border border-gray-100`}></div>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Address */}
         <div className="bg-white rounded-2xl p-6 shadow-md mb-8 text-center">
