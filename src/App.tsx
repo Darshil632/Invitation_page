@@ -292,7 +292,7 @@ export default function App() {
           >
             <Heart size={40} fill="currentColor" className="mx-auto mb-4" />
             <p className="text-lg md:text-xl mb-2 text-pink-50 max-w-2xl mx-auto font-serif italic">
-              "With the blessings of elders and love of family, we invite you to celebrate 25 years of togetherness."
+              "With the blessings of Elders and Love of Family, we invite you to celebrate 25 years of togetherness."
             </p>
             <p className="text-lg md:text-xl text-pink-100 mb-6 max-w-2xl mx-auto font-serif">
               Your presence will make this celebration of love and memories truly complete.
@@ -303,10 +303,6 @@ export default function App() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
             >
-              "Where there is love, there is life." <br />
-              <span className="not-italic font-medium mt-2 block text-pink-100">
-                — Best Compliments from Darshil
-              </span>
             </motion.div>
           </motion.div>
         </div>
