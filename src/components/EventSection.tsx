@@ -214,8 +214,8 @@ export function EventSection({
         {wardrobe && (
           <div className="bg-white rounded-2xl p-6 shadow-md mb-8 text-center">
             <h4 className={`text-4xl mb-6 ${scheme.text} font-cursive`}>Dress Code</h4>
-            <div className="grid md:grid-cols-2 gap-8 relative">
-              <div className="flex flex-col items-center md:border-r md:border-gray-300">
+            <div className="grid grid-cols-2 gap-4 relative">
+              <div className="flex flex-col items-center border-r border-gray-300">
                 <div className="text-xl text-gray-800 font-serif mb-2">Women</div>
                 <div className={`text-lg ${scheme.text} mb-4 font-medium`}>{wardrobe.woman.text}</div>
                 <div className={`h-16 w-16 rounded-full ${wardrobe.woman.colorClass} shadow-lg ring-4 ring-white ring-offset-2 ring-offset-gray-50`}></div>
