@@ -245,7 +245,7 @@ export default function App() {
           color="yellow"
           icon="sun"
           onRSVP={(response) => handleRSVP('haldi', response)}
-          onAddToCalendar={() => handleAddToCalendar('Haldi Ceremony', '20260214', '11:00 AM')}
+          onAddToCalendar={() => handleAddToCalendar('Haldi Ceremony', '20260214', '3:00 PM')}
           rsvpStatus={rsvpHaldi}
           delay={0}
           imageUrl={haldiImage}
