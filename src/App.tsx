@@ -241,7 +241,7 @@ export default function App() {
           date="Saturday, February 14, 2026"
           time="3:00 PM onwards"
           venue="Khalihan A Luxury Stay"
-          address="Khalihan Luxury Farm Stay cafe & Restaurant"
+          address="Khalihan Luxury Farm Stay cafe & Restaurant,Udaipur"
           color="yellow"
           icon="sun"
           onRSVP={(response) => handleRSVP('haldi', response)}
@@ -267,7 +267,7 @@ export default function App() {
           date="Saturday, February 14, 2026"
           time="7:00 PM onwards"
           venue="Khalihan A Luxury Stay"
-          address="Khalihan Luxury Farm Stay cafe & Restaurant"
+          address="Khalihan Luxury Farm Stay cafe & Restaurant,Udaipur"
           color="purple"
           icon="moon"
           onRSVP={(response) => handleRSVP('main', response)}
