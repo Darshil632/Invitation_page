@@ -239,7 +239,7 @@ export default function App() {
           title="Haldi Ceremony"
           subtitle="An afternoon of yellow hues and joyous traditions"
           date="Saturday, February 14, 2026"
-          time="3:00 PM onwards"
+          time="2:00 PM onwards"
           venue="Khalihan A Luxury Stay"
           address="Khalihan Luxury Farm Stay cafe & Restaurant,Udaipur"
           color="yellow"
